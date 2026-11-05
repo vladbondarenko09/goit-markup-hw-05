@@ -495,6 +495,7 @@
         </div>
       </section>
     </main>
+
     <footer id="footer" class="footer">
       <div class="container footer-container">
         <div class="footer-box">
@@ -558,7 +559,130 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <label for="subscribe" class="footer-subscribe-title"
+            >Subscribe</label
+          >
+          <form action="" class="footer-subscribe-form">
+            <input
+              class="footer-subscribe-input"
+              type="email"
+              name="subscribe-text"
+              id="subscribe"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Backdrop modal -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          Leave your contacts and we will call you back
+        </p>
+
+        <!-- FORM -->
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-field"
+                id="user-name"
+                name="user-name"
+                type="text"
+                minlength="2"
+                required
+              />
+              <svg class="review-form-field-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >Email</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-field"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+              />
+              <svg class="review-form-field-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-tel"
+              >Phone number</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-field"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+              />
+              <svg class="review-form-field-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-message"
+              >Comment</label
+            >
+            <textarea
+              class="review-form-message"
+              name="user-message"
+              id="user-message"
+              placeholder="Enter text"
+              minlength="2"
+              required
+            ></textarea>
+          </div>
+          <div class="review-form-policy-wrapper">
+            <input
+              class="review-form-policy-checkbox sr-only"
+              id="privacy-policy"
+              name="privacy-policy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label class="review-form-policy-label" for="privacy-policy">
+              <span class="review-form-custom-checkbox">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              <span class="review-form-policy-label-text">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
