@@ -102,13 +102,14 @@
   border-color: #31d0aa;
   outline: none;
 }
-.footer-subscribe-btn:hover {
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
   background-color: #31d0aa;
 }
 .footer-subscribe-input::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
@@ -125,6 +126,12 @@
 .footer-box {
   margin-right: 120px;
 }
-.footer-social-links {
-  margin-right: 80px;
+.footer-subscribe {
+  margin-left: auto;
+}
+.footer-subscribe-input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
